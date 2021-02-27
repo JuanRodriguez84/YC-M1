@@ -157,7 +157,6 @@ function redondearNumero(num) {
 
 }
 
-
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
@@ -170,7 +169,7 @@ function numeroRandom() {
   return Math.random()
 }
 
-
+//console.log(numeroRandom());
 
 function esPositivo(numero) {
   //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo. 
@@ -188,7 +187,7 @@ function esPositivo(numero) {
   } 
 }
 
-//console.log(esPositivo(0))
+//console.log(esPositivo(-1));
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
@@ -197,16 +196,12 @@ function agregarSimboloExclamacion(str) {
   return str + "!"
 }
 
-//console.log(agregarSimboloExclamacion("juan"))
-
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
   return nombre + " " + apellido
 }
-
-//console.log(combinarNombres("juan","Rodriguez"))
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
@@ -215,15 +210,12 @@ function obtenerSaludo(nombre) {
   return "hola " +  nombre
 }
 
-//console.log(obtenerSaludo("juan"))
-
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
   return alto * ancho
 }
 
-//console.log(obtenerAreaRectangulo(5,5))
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
@@ -231,41 +223,42 @@ function retornarPerimetro(lado){
   return lado * 4;
 }
 
-//console.log(retornarPerimetro(5))
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
   return (base * altura) / 2;
+
 }
 
-//console.log(areaDelTriangulo(5,4))
 
 function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-   return euro * 1.20
+  return euro * 1.20
 }
 
-//console.log(deEuroAdolar(2))
 
 function esVocal(letra){
-  var vocales = ["a", "e", "i", "o", "u"];
+   var vocales = ["A", "E", "I", "O", "U"];
   //Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”. 
   //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   //Escribe tu código aquí
   letra = letra.toUpperCase();
-  if (letra.lenght !== 1) {
+  if ( letra.length !== 1 ) {
     return "Dato incorrecto";
-  } else if (vocales.indexOf[letra] === -1) {
+  } else if (vocales.indexOf(letra) !== -1) {
     return "Es vocal";
-  }
+  } else
+    return "No Es vocal";
 }
 
-console.log(esVocal("a"));
+//console.log( esVocal("wt") );
 
+//var foo = 'Hello World';  
+//console.log( foo.length );
 
 // No modificar nada debajo de esta línea
 // --------------------------------
